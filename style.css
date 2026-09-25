@@ -20,7 +20,7 @@ a{text-decoration:none}
 .topbar i{margin-left:5px}
 
 .main-nav{background:var(--black);padding:8px 0;position:sticky;top:0;z-index:1000;box-shadow:0 10px 30px rgba(0,0,0,.16)}
-.site-logo{width:158px;height:auto;display:block}
+.site-logo{width:158px;height:auto;display:block;filter: brightness(0) invert(1)}
 .navbar-brand{padding:0}
 .nav-link{color:#e7e7ea!important;font-size:14px;font-weight:700;margin:0 7px;transition:.25s}
 .nav-link:hover,.nav-link.active{color:var(--red)!important}
@@ -49,7 +49,10 @@ h1 em{font-style:normal;color:var(--red)}
 
 .hero-logo-wrap{height:470px;position:relative;display:grid;place-items:center}
 .logo-glow{position:absolute;width:390px;height:390px;border-radius:50%;background:var(--red);filter:blur(70px);opacity:.18}
-.hero-logo{width:min(100%,500px);height:auto;position:relative;z-index:2;filter:drop-shadow(0 25px 35px rgba(0,0,0,.45))}
+.hero-logo{width:min(100%,500px);height:auto;position:relative;z-index:2;  filter:
+    brightness(0)
+    invert(1)
+    drop-shadow(0 25px 35px rgba(0,0,0,.45));}
 .hero-tag{position:absolute;z-index:3;display:flex;align-items:center;gap:9px;background:#fff;color:var(--black);padding:11px 16px;border-radius:10px;box-shadow:0 14px 30px rgba(0,0,0,.28);font-size:13px;font-weight:800}
 .hero-tag i{color:var(--red)}
 .tag-top{right:0;top:72px}.tag-bottom{left:0;bottom:70px}
@@ -83,9 +86,10 @@ h1 em{font-style:normal;color:var(--red)}
 
 .why-section{background:var(--offwhite)}
 .why-visual{min-height:460px;display:grid;place-items:center;position:relative}
-.why-logo-card{width:min(100%,450px);padding:45px 28px;background:#fff;border:1px solid #eee;border-radius:25px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.why-logo-card{width:min(100%,450px);padding:45px 28px;background:#0e0d0d;border:1px solid #eee;border-radius:25px;box-shadow:var(--shadow);position:relative;overflow:hidden}
 .why-logo-card:after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:var(--red);opacity:.07;left:-50px;bottom:-70px}
-.why-logo{width:100%;height:auto;position:relative;z-index:2}
+.why-logo{width:100%;height:auto;position:relative;z-index:2;filter:brightness(0) invert(1);
+}
 .mini-tag{position:absolute;background:var(--black);color:#fff;padding:8px 14px;border-radius:9px;font-size:12px;font-weight:800;box-shadow:0 10px 25px rgba(0,0,0,.15)}
 .tag-a{top:50px;right:15px}.tag-b{bottom:70px;right:5px;background:var(--red)}.tag-c{top:110px;left:15px}
 .why-title{margin-bottom:30px}
